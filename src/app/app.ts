@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router'; 
+import { RouterOutlet } from '@angular/router';
 import { AppHeader } from './components/app-header/app-header';
-import { Footer } from './components/footer/footer';
-import { AppHeroComponent } from './components/app-hero/hero'; 
+import { AppFooterComponent } from "./components/app-footer/app-footer";
+import { AppHeroComponent } from './components/app-hero/app-hero';
 
 @Component({
   selector: 'app-root',
-  imports: [AppHeader, AppHeroComponent, Footer],
+  standalone: true,
+  imports: [RouterOutlet, AppHeader, AppHeroComponent, AppFooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -15,4 +16,3 @@ export class App {
   isLoggedIn = false;
   materias = ['Programacion', 'Base Datos', 'Redes', 'Sistemas Operativos'];
 }
-
