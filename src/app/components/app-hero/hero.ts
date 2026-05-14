@@ -4,6 +4,7 @@ import { UpperCasePipe } from '@angular/common';
 
 @Component({
     selector: 'app-hero',
+    standalone: true, 
     imports: [UpperCasePipe], 
     templateUrl: './hero.html',
     styleUrl: './hero.css',

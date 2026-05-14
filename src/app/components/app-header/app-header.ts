@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/c
 })
 export class AppHeader {
 
-  readonly brand = signal("PPW ANGULAR")
+  readonly brand = signal("PPW-ANGULAR")
   readonly showInfo = signal(false);
 
   readonly toggleLabel = computed(() => (this.showInfo() ? 'Ocular Info' : 'Mostrar Info')); // computadas trabajan con senales, se vuelven a calcular cada vez que cambian las señales que utilizan

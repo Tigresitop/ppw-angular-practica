@@ -1,5 +1,14 @@
-.footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+/* src/app/components/footer/footer.css */
+.footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #157555;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    color: #333;
 }
